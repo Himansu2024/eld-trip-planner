@@ -9,7 +9,7 @@ import RouteMap  from './components/RouteMap';
 import EldLogCanvas from './components/EldLogCanvas';
 import TripSummary  from './components/TripSummary';
 
-const API_URL = process.env.REACT_APP_API_URL || '/api/plan-trip/';
+const API_URL = "https://eld-trip-planner-production-8aa7.up.railway.app/api/plan-trip/";
 
 export default function App() {
   const [tripData,  setTripData]  = useState(null);
