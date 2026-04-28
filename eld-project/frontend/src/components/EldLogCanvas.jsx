@@ -28,20 +28,19 @@ import React, { useRef, useEffect, useCallback } from 'react';
 const ORIG_W = 513;
 const ORIG_H = 518;
 
-const GRID_LEFT  = 57;   // x-pixel of midnight (left edge of grid)
-const GRID_RIGHT = 492;  // x-pixel of end-of-day (right edge)
+const GRID_LEFT  = 65;   // x-pixel of midnight (left edge of grid)
+const GRID_RIGHT = 455;  // x-pixel of end-of-day (right edge)
 const GRID_TOTAL_PX = GRID_RIGHT - GRID_LEFT;  // 435 px = 24 h
 
 // Row Y-centres for drawing horizontal duty lines
 const ROW_Y = {
-  'Off Duty':      99,
-  'Sleeper Berth': 120,
-  'Driving':       162,
-  'On Duty':       201,
+  'Off Duty':      195,  
+  'Sleeper Berth': 214,  
+  'Driving':       226,  
+  'On Duty':       243,  
 };
 
-// Y-coordinate for remarks text
-const REMARKS_Y = 245;
+const REMARKS_Y = 300;
 
 // Line drawing thickness (in original pixel space)
 const LINE_WIDTH    = 2.5;
